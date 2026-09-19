@@ -1,16 +1,46 @@
 aid: airblack
 name: Airblack
-description: 'Airblack is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: >-
+  Airblack (Airblack Technologies Private Limited) is a Gurugram, India-based
+  edtech company that runs an outcome-focused skilling academy for creators and
+  micro-entrepreneurs, delivering live online makeup, beauty and culinary courses
+  with professional certification through its website and Android/iOS app, plus a
+  sister app, Zudo. Founded by Videt Jaiswal and backed by Info Edge Ventures and
+  Elevation Capital (USD 5.2M Series A, 2021), it reports a community of 45,000+
+  students. Airblack is a consumer learning product, not a platform: it publishes no
+  developer program, no public API documentation and no machine-readable API contract,
+  and the backend its web app calls (service.ablck.com) is a private application
+  service that answers every probed path with a JSON 404.
 url: https://raw.githubusercontent.com/api-evangelist/airblack/refs/heads/main/apis.yml
+image: https://d2i464mmj9hzgy.cloudfront.net/cloudinary/dtks0l86r/website-static-assets/Project_Website/Homepage/middleHQ_kwjdxb.webp
 x-type: company
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+x-tier: profiled
+x-tier-reason: 'enrichment pass 2026-09-19: full contract discovery run, no public API surface found'
 specificationVersion: '0.20'
 created: '2026-09-19'
 modified: '2026-09-19'
 tags:
+- Education
+- EdTech
+- Online Learning
+- Skilling
+- Beauty
+- Makeup
+- Culinary
+- Creator Economy
+- India
+- Company
+tags_raw:
+- Education
+- EdTech
+- Online Learning
+- Skilling
+- Beauty
+- Makeup
+- Culinary
+- Creator Economy
+- India
 - Company
 apis: []
 maintainers:
@@ -19,5 +49,69 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/airblack-domain-security.yml
 - type: Website
+  url: https://www.airblack.com/
+- type: About
+  url: https://www.airblack.com/about
+- type: Support
+  url: https://www.airblack.com/contact
+- type: Blog
+  url: https://blog.airblack.com/
+- type: BlogFeeds
+  url: https://blog.airblack.com/feed/
+- type: TermsOfService
+  url: https://www.airblack.com/terms/termsofservice
+- type: PrivacyPolicy
+  url: https://www.airblack.com/terms/privacypolicy
+- type: RefundPolicy
+  url: https://www.airblack.com/terms/refundpolicy
+- type: CookiePolicy
+  url: https://www.airblack.com/terms/cookiepolicy
+- type: LinkedIn
+  url: https://www.linkedin.com/company/airblack
+- type: Instagram
+  url: https://www.instagram.com/airblack.club/
+- type: GooglePlay
+  url: https://play.google.com/store/apps/details?id=com.airblack
+- type: GitHubOrganization
+  url: https://github.com/Airblack-Tech
+- type: Packages
+  url: packages/airblack-packages.yml
+- type: LLMsTxt
+  url: llms/airblack-llms.txt
+- type: RegulatoryPosture
+  url: regulatory/airblack-regulatory-posture.yml
+- type: SecondaryMarket
   url: https://equityzen.com/company/airblack
+  x-probe: '403 Akamai edge denial to our crawler on 2026-09-19 (browser UA); page exists, it is the harvest source'
+
+x-enrichment:
+  date: '2026-09-19'
+  status: minimal
+  artifacts_added: 5
+  pass: local-v3
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: >-
+    Airblack sells live makeup, beauty and culinary courses to consumers and ships no developer
+    surface at all: api./developer./docs./app./mcp.airblack.com are all NXDOMAIN, every contract
+    path 404s at the site's Next.js catch-all, and the only backend it operates —
+    service.ablck.com/new/api/, found by reading the site's own JS chunks — is a private
+    application service that answers every probed path with a JSON 404.
+  evidence:
+  - url: https://www.airblack.com/
+    status: 200
+  - url: https://www.airblack.com/openapi.json
+    status: 404
+  - url: https://www.airblack.com/developers
+    status: 404
+  - url: https://www.airblack.com/.well-known/api-catalog
+    status: 404
+  - url: https://service.ablck.com/new/api/openapi.json
+    status: 404
+  - url: https://blog.airblack.com/feed/
+    status: 200
+  checked: '2026-09-19'

@@ -1,0 +1,43 @@
+# Airblack
+
+> Airblack (Airblack Technologies Private Limited, Gurugram, India) is an outcome-focused
+> skilling academy for creators and micro-entrepreneurs: live online makeup, beauty and
+> culinary courses with professional certification, delivered through airblack.com and an
+> Android/iOS app, plus a sister app, Zudo. **Airblack publishes no public API, no OpenAPI,
+> GraphQL or AsyncAPI contract, no SDK, no developer portal and no MCP server.** This file is
+> an API Evangelist-generated map of the company's public surface as verified on 2026-09-19;
+> it is not published by Airblack.
+
+## What is machine-readable
+
+- [Blog RSS feed](https://blog.airblack.com/feed/): WordPress RSS 2.0 feed of the Airblack blog / newsroom (HTTP 200, application/rss+xml).
+- [Sitemap](https://www.airblack.com/sitemap.xml): XML sitemap of the marketing site — mostly /member/ and /beauty/ pages, plus /influencer/, /culinary, /seminars, /about and /contact.
+- [robots.txt](https://www.airblack.com/robots.txt): Disallows /_next/*, /dashboard and /sdc/; everything else is allowed.
+
+That is the complete machine-readable surface. There is no `/.well-known/` document of any
+kind on www.airblack.com, airblack.com, blog.airblack.com or service.ablck.com.
+
+## What is not published
+
+- No developer program: api., developer., developers., docs., app., status. and mcp.airblack.com do not resolve; /developers, /developer, /docs, /api, /openapi.json, /swagger.json and /graphql all 404 on www.airblack.com.
+- The web app's backend, https://service.ablck.com/new/api/, is a private application service. It answers every probed path — including /openapi.json, /swagger.json and /api-docs — with a JSON 404 and is not documented anywhere.
+- The only first-party package is `airblack-rn` on npm (last release 1.0.2, 2022-04-11): an internal React Native module bundle for the company's own app, not an API client.
+- The GitHub organization github.com/Airblack-Tech has no public repositories.
+
+## Company pages
+
+- [Website](https://www.airblack.com/): Home page — Beauty Club, Culinary Club and Zudo.
+- [About](https://www.airblack.com/about): Mission, team and investors.
+- [Contact](https://www.airblack.com/contact): Registered address (Udyog Vihar Phase V, Gurugram), phone lines, info@ / partner@ / media@ addresses.
+- [Blog / Newsroom](https://blog.airblack.com/): Company blog on WordPress.
+- [Terms of Use](https://www.airblack.com/terms/termsofservice): Published under India's IT (Intermediaries Guidelines) Rules, 2011; names a Grievance Officer.
+- [Privacy Policy](https://www.airblack.com/terms/privacypolicy): Last updated 2023-01-12.
+- [Refund Policy](https://www.airblack.com/terms/refundpolicy)
+- [Cookie Policy](https://www.airblack.com/terms/cookiepolicy)
+- [Android app](https://play.google.com/store/apps/details?id=com.airblack)
+- [LinkedIn](https://www.linkedin.com/company/airblack)
+- [Instagram](https://www.instagram.com/airblack.club/)
+
+## Optional
+
+- [API Evangelist profile source](https://github.com/api-evangelist/airblack): The apis.yml and probe records this file was generated from, including the well-known and domain-security probes.

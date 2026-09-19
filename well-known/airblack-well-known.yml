@@ -1,0 +1,108 @@
+generated: '2026-09-19'
+method: probed
+source: live HTTPS probes of every Airblack host known to this record, 2026-09-19
+note: >-
+  Every path in the enrichment contract's closed list was probed on the registrable domain,
+  the www host, the blog host and service.ablck.com (the private backend the airblack.com
+  Next.js app calls, found by reading the site's own JS chunks). Nothing was served. The apex
+  airblack.com 301s every path to www.airblack.com, whose Next.js catch-all answers a real
+  HTTP 404 with an HTML shell for every unknown path; blog.airblack.com (WordPress) answers
+  404 with its theme's not-found page; service.ablck.com answers every path with a JSON
+  {"errors":{"message":"Not Found"}} 404. No developer, docs, api or mcp subdomain resolves
+  (api./developer./developers./docs./app./status./mcp.airblack.com are all NXDOMAIN). No
+  WellKnown or SecurityTxt pointer is emitted from this file: it records an absence, not a
+  surface.
+hit_count: 0
+hosts:
+  - host: https://www.airblack.com
+    documents:
+      - path: /.well-known/security.txt
+        status: 404
+      - path: /security.txt
+        status: 404
+      - path: /.well-known/openid-configuration
+        status: 404
+      - path: /.well-known/oauth-authorization-server
+        status: 404
+      - path: /.well-known/oauth-protected-resource
+        status: 404
+      - path: /.well-known/api-catalog
+        status: 404
+      - path: /.well-known/ai-plugin.json
+        status: 404
+      - path: /.well-known/agent-card.json
+        status: 404
+      - path: /.well-known/agent.json
+        status: 404
+      - path: /llms.txt
+        status: 404
+      - path: /robots.txt
+        status: 200
+        note: >-
+          Served (text/plain). Disallows /_next/*, /dashboard and /sdc/; names the sitemap.
+          Not a discovery document and not indexed as one.
+  - host: https://airblack.com
+    documents:
+      - path: /.well-known/security.txt
+        status: 404
+        note: apex 301s to www.airblack.com; status is the www origin's response
+      - path: /.well-known/openid-configuration
+        status: 404
+      - path: /.well-known/oauth-authorization-server
+        status: 404
+      - path: /.well-known/oauth-protected-resource
+        status: 404
+      - path: /.well-known/api-catalog
+        status: 404
+      - path: /.well-known/ai-plugin.json
+        status: 404
+      - path: /.well-known/agent-card.json
+        status: 404
+      - path: /.well-known/agent.json
+        status: 404
+  - host: https://blog.airblack.com
+    documents:
+      - path: /.well-known/security.txt
+        status: 404
+      - path: /.well-known/openid-configuration
+        status: 404
+      - path: /.well-known/oauth-authorization-server
+        status: 404
+      - path: /.well-known/oauth-protected-resource
+        status: 404
+      - path: /.well-known/api-catalog
+        status: 404
+      - path: /.well-known/ai-plugin.json
+        status: 404
+      - path: /.well-known/agent-card.json
+        status: 404
+      - path: /.well-known/agent.json
+        status: 404
+  - host: https://service.ablck.com
+    note: >-
+      Private application backend called by the airblack.com web app
+      (https://service.ablck.com/new/api/). Probed because it is the only API host the
+      company operates; it is not a published surface.
+    documents:
+      - path: /.well-known/security.txt
+        status: 404
+      - path: /.well-known/openid-configuration
+        status: 404
+      - path: /.well-known/oauth-authorization-server
+        status: 404
+      - path: /.well-known/api-catalog
+        status: 404
+      - path: /.well-known/agent-card.json
+        status: 404
+      - path: /.well-known/agent.json
+        status: 404
+      - path: /openapi.json
+        status: 404
+      - path: /swagger.json
+        status: 404
+      - path: /api-docs
+        status: 404
+      - path: /new/api/openapi.json
+        status: 404
+      - path: /new/api/swagger.json
+        status: 404

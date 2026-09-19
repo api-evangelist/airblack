@@ -1,0 +1,29 @@
+generated: '2026-09-19'
+method: searched
+source: https://registry.npmjs.org/airblack-rn
+note: >-
+  npm, PyPI, RubyGems, crates.io, Maven Central, NuGet, pkg.go.dev and Packagist were searched
+  for first-party Airblack packages. The only hit is airblack-rn on npm, published by the
+  tech-airblack account (maintainer email dev@airblack.co) — an internal React Native
+  "common modules" bundle for the company's own app, not a client library for any public API.
+  It is recorded because it is a genuine first-party registry publication and the only dated
+  engineering release Airblack has made in public; it is NOT an SDK, so no SDKs pointer is
+  emitted. Last release 2022-04-11; three versions in total. The company GitHub organization
+  (github.com/Airblack-Tech, created 2024-03) has zero public repositories; github.com/AirBlack
+  is an unrelated individual and is not attributed to the company.
+packages:
+  - language: javascript
+    registry: npm
+    name: airblack-rn
+    url: https://www.npmjs.com/package/airblack-rn
+    install: npm install airblack-rn
+    official: true
+    sdk: false
+    kind: internal-app-module
+    version: 1.0.2
+    published: '2022-04-11'
+    first_published: '2019-11-28'
+    publisher: tech-airblack
+    note: >-
+      Registry description reads "repo for all common rn modules for airblack". No repository
+      or homepage field; README is two lines. Not a client for a public API.
