@@ -64,5 +64,84 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Airblack is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
-- https://equityzen.com/company/airblack
+Airblack (Airblack Technologies Private Limited) is a Gurugram, India-based edtech company that runs an outcome-focused skilling academy for creators and micro-entrepreneurs, delivering live online makeup, beauty and culinary courses with professional certification through its website and Android/iOS app, plus a sister app, Zudo. Founded by Videt Jaiswal and backed by Info Edge Ventures and Elevation Capital (USD 5.2M Series A, 2021), it reports a community of 45,000+ students. Airblack is a consumer learning product, not a platform: it publishes no developer program, no public API documentation and no machine-readable API contract, and the backend its web app calls (service.ablck.com) is a private application service that answers every probed path with a JSON 404.
+
+**Areas:** Education · EdTech · E-Learning · Skilling · Beauty · Makeup · Culinary · Creator Economy · India · Company
+
+## Airblack on APIs.io
+
+Everything profiled for Airblack is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/airblack/](https://apis.io/providers/airblack/)** — or go straight to one of the APIs or properties below.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Airblack Domain Security](https://apis.io/security/airblack/airblack-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.airblack.com/)
+- [Support](https://www.airblack.com/contact)
+- [Blog](https://blog.airblack.com/)
+- [Terms of service](https://www.airblack.com/terms/termsofservice)
+- [Privacy policy](https://www.airblack.com/terms/privacypolicy)
+- [GitHub](https://github.com/Airblack-Tech)
+
+## API Evangelist rating
+
+**Kin Score 10.8** — minimal · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 55.4 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 2.6 |
+| Developer ergonomics | 7.1 |
+| Access clarity | 21.1 |
+
+**Agent readiness 0.0** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 13.7** — Education & Research
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/airblack/](https://apis.io/providers/airblack/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Airblack: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/airblack/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
